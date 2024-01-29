@@ -1,50 +1,17 @@
-### How-To
+# Lenia
 
-##### Linux (arch):
-(in Lenia/Python folder)
-1. Make virtual environment:
+## Evolution of Game of Life
+
+I saw on personal research that that is an evolution of the Game of Life. This representation of life is in discret space while Lenia is in continuous one. We can see on this version new interesting form of life.  
+
+I extact the .\Python files from [the repos of Chakazul](https://github.com/Chakazul/Lenia.git)
+
+
+## Setup environnement
+I am on Ubuntu 20.04
 ```bash
-virtualenv *env_name*
-```
-2. Activate your virtual environment:
-```bash
-source *env_name*/bin/activate
-```
-3. Install libraries:
-```bash
+wsl
+virtualenv lenia_env
+source lenia_env/bin/activate
 pip install -r requirements.txt
-```
-
-------------
-
-
-### Trouble-shoot:
-
-**[Error]** ImportError: libtk8.6.so: cannot open shared object file: No such file or directory
-
-**[Solution]** Install tk
-
-
-```bash
-sudo pacman -S tk
-```
-or
-```bash
-sudo apt-get install tk
-```
-
-or if Tkinter module not found on Ubuntu:
-
-```bash
-sudo apt-get install python3-tk
-```
-
-For python 3.6:
-```bash
-sudo apt-get install python3.6-tk
-```
-**[Error]** libf77blas.so.3: cannot open shared object file: No such file or dircetory
-**[Solution]** Install libatlas3-base
-```bash
-sudo apt install libatlas3-base
 ```
