@@ -15,3 +15,19 @@ virtualenv lenia_env
 source lenia_env/bin/activate
 pip install -r requirements.txt
 ```
+
+## Use SSH Key
+``` bash
+$ eval `ssh-agent`
+Agent pid 1761
+
+$ ssh-add /home/ruben/.ssh/id_rsa
+Identity added: /home/ruben/.ssh/id_rsa (ruben@adhesif)
+
+-- Copier coller la clef PUBLIC dans github
+
+$ git add .
+$ git commit -m "modif"
+$ git push git@github.com:ruben-adhesif/Lenia.git
+/!\ Clef SSH differente que lien git
+```
